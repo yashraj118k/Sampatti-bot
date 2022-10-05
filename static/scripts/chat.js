@@ -83,6 +83,19 @@ function buttonSendText(sampleText) {
     $("#chatbox").append(userHtml);
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
 
+    // //Uncomment this if you want the bot to respond to this buttonSendText event
+    // setTimeout(() => {
+    //     getHardResponse(sampleText);
+    // }, 1000)
+}
+
+function buttonSendText2(sampleText) {
+    let botHtml = '<p class="botText"><span>' + sampleText + '</span></p>';
+
+    $("#textInput").val("");
+    $("#chatbox").append(botHtml);
+    document.getElementById("chat-bar-bottom").scrollIntoView(true);
+
     //Uncomment this if you want the bot to respond to this buttonSendText event
     // setTimeout(() => {
     //     getHardResponse(sampleText);
@@ -94,7 +107,7 @@ function sendButton() {
 }
 
 function heartButton() {
-    buttonSendText("Thankyou for liking my services")
+    buttonSendText2("Thank you for liking my services")
 }
 
 // Press enter to send a message
