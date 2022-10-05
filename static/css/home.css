@@ -1,0 +1,10 @@
+html {
+    scroll-behavior: smooth;
+    font-family: Helvetica, sans-serif, Arial;
+}
+
+body {
+    margin: 12px solid red;
+    /* background-color: rgb(238, 61, 61); */
+    background-image: url('https://corp.smartbrief.com/wp-content/uploads/2020/07/AdobeStock_331489342-scaled.jpeg');
+}
