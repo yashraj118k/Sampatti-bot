@@ -1,0 +1,1531 @@
+{
+    "intents":[
+       {
+            "tag": "atalyojana_what",
+            "patterns": [
+                "What is Atal Pension Yojana?",
+                "Atal Pension Yojana",
+                "Describe the Atal Pension Yojana.",
+                "Tell me about Atal Pension Yojana",
+                "What is APY"
+            ],
+            "responses": [
+                "It is the universal social security scheme for all Indians who are non income taxpayers",
+                "It is the national social security programme for all non-taxpaying Indians.",
+                "Atal Pension Yojana is a pension scheme that focuses on helping the working poor have a steady income after retirement.",
+                "The Atal Pension Yojana is a pension system that aims to provide a consistent income after retirement to the working poor."
+            ]
+        },
+        {
+            "tag": "atalyojana_when",
+            "patterns": [
+                "When was the Atal Pension Yojana launched?",
+                "When was the APY launched?",
+                "Atal Yojana Pension Launch",
+                "Atal Yojana Pension introduced in?"
+            ],
+            "responses": [
+                "Official Launch date at 09.05.2015",
+                "It was launched by Prime Minister Narendra Modi on 9 May 2015 in Kolkata.",
+                "The Atal Pension scheme was launched on a national level in June 2015."
+            ]
+        },
+        {
+            "tag": "atalyojana_target",
+            "patterns": [
+                "Who is Atal Pension Yojana targeted at?",
+                "Who can use Atal Pension Yojana?",
+                "Who is the Atal Pension Yojana aimed at?",
+                "Can I apply for Atal Yojana Pension?",
+                "Who is APY open to?",
+                "Atal pension yojana is for",
+                "APY is for"
+            ],
+            "responses": [
+                "Bank account holders in the age group of 18 to 40 years",
+                "Mainly aimed at workers in the unorganized sector",
+                "Specifically targeted towards employees in the unorganised sector",
+                ""
+                
+            ]
+        },
+        {
+            "tag": "atalyojana_minage",
+            "patterns": [
+                "What is the minimum age for a person to join APY?",
+                "What is the minimum age for a person to join Atal Pension Yojana?",
+                "What is the minimum age to join APY?",
+                "Minimum age",
+                "Min age"
+            ],
+            "responses": [
+                "Minimum age required for APY is 18",
+                "18 is the minimum age for subscribing to Atal Pension Yojana",
+                "You should be at least 18 to benefit from Atal Pension Yojana(APY)"
+            ]
+        },
+        {
+            "tag": "atalyojana_maxage",
+            "patterns": [
+                "What is the maximum age for a person to join APY?",
+                "What is the maximum age for a person to join Atal Pension Yojana?",
+                "What is the maximum age to join APY?",
+                "Maximum age",
+                "Max age"
+            ],
+            "responses": [
+                "Maximum age required for APY is 40",
+                "40 is the maximum age for subscribing to Atal Pension Yojana",
+                "You should be at most 40 to benefit from Atal Pension Yojana(APY)"
+            ]
+        },
+        {
+            "tag": "atalyojana_agerange",
+            "patterns": [
+                "What age group is APY open to?",
+                "Age for APY",
+                "Age for Atal Pension Yojana",
+                "Age group APY",
+                "What age ranges are eligible for APY?",
+                "Who may apply for APY? What age range?"
+            ],
+            "responses": [
+                "If you are in the range of 18 to 40 years then you can apply for APY",
+                "Range: 18 to 40 years old",
+                "You need to be minimum 18 and maximum 40 to apply for Atal Pension Yojana"
+            ]
+        },
+        {
+            "tag": "atalyojana_requirements",
+            "patterns": [
+                "What are the requirements for getting benefits of APY?",
+                "What is needed for Atal Pension Yojana",
+                "What are the prerequisites to receive APY benefits?",
+                "What conditions must be met to receive APY benefits?",
+                "What do I need?"
+            ],
+            "responses": [
+                "You need to have aadhar id and a bank account",
+                "You should have a savings bank account/ post office savings bank account and AADHAR CARD, if not then you will need to apply for one or both",
+                "You should already have an AADHAR CARD, savings bank account, or post office savings account. If not, you will need to apply for one or both."
+            ]
+        },
+        {   
+            "tag": "atalyojana_details",
+            "patterns": [
+                "Give me details of atal pension yojana",
+                "What do I get?",
+                "How much money do I receive?",
+                "How does it help me?"
+            ],
+            "responses": [
+                "Under the APY, guaranteed minimum pension of Rs. 1,000/- or 2,000/- or 3,000/- or 4,000 or 5,000 per month will be given at the age of 60 years depending on the contributions by you, the subscriber.",
+                "At the age of 60, you, the subscriber, will get a guaranteed minimum pension of Rs. 1,000, Rs. 2,000, Rs. 3,000, Rs. 4,000, or Rs. 5,000 per month based on your contributions.",
+                "Under Atal Pension Yojana, the Government will co-contribute in your retirement plan "
+            ]
+        },
+        {   
+            "tag": "atalyojana_contribution_what",
+            "patterns": [
+                "What are the contributions in APY?",
+                "Contributions in Atal Pension Yojana"
+            ],
+            "responses": [
+                "You will need to co-contribute alongside the Government in your retirement plan. You will need to set aside a certain amount of money i.e contribution to be deposited in your account and the government will deposit about 50% of that in your account as well monthly"
+                
+            ]
+        },
+        {   
+            "tag": "atalyojana_contribution_when",
+            "patterns": [
+                "At what age would a subscriber receive a minimum monthly pension?",
+                "What is the minimum age at which a subscriber would get a pension?",
+                "What is the minimum age at which a subscriber is eligible for a monthly pension?",
+                "When does contribution start?",
+                "When do I get pension?",
+                "When do I receive the pension?"
+            ],
+            "responses": [
+                "You start to get your monthly pension at 60 years",
+                "At the age of 60, you can begin receiving a monthly pension."
+            ]
+        },
+        {   
+            "tag": "atalyojana_contribution_amount",
+            "patterns": [
+                "How much of the total contribution would the government co-contribute to each subscriber account?",
+                "The government would co-contribute what percentage of the total to each subscriber account?",
+                "What percentage of the overall contribution would the government make to each subscriber account?",
+                "What percentage of my overall contribution would the government make to each subscriber account?"
+            ],
+            "responses": [
+                "50% of the contribution to your account will be given by the government with limit of Rs.1000",
+                "The government will contribute 50% to your account subject to max Rs. 1000."
+            ]
+        },
+        {   
+            "tag": "atalyojana_slabs",
+            "patterns": [
+                "How many slabs of pension are there under the Atal Pension Yojana?",
+                "How many pension slabs are available under the Atal Pension Yojana?",
+                "How much pension will be received under APY? "
+            ],
+            "responses": [
+                "Minimum guaranteed monthly pension of Rs 1,000/- or 2,000/- or 3,000/- or 4,000 or 5,000/- per month will be given from the age of 60 years onwards depending on the contributions by the subscribers.",
+                "From the age of 60, a minimum guaranteed monthly pension of Rs 1,000/-, Rs 2,000/-, Rs 3,000/-, Rs 4,000/-, or Rs 5,000/- would be paid, based on the subscribers' payments.",
+                "There are five slabs of pension depending on your contributions Rs 1,000/-, Rs 2,000/-, Rs 3,000/-, Rs 4,000/-, or Rs 5,000/-"
+            ]
+        },
+        {   
+            "tag": "atalyojana_1",
+            "patterns": [
+                "How often can subscribers make contributions to APY?"
+            ],
+            "responses": [
+                "Monthly,Quarterly,Half-yearly"
+            ]
+        },
+        {   
+            "tag": "atalyojana_2",
+            "patterns": [
+                "Who administers the APY?",
+                "Who would guarantee the minimum pension?"
+            ],
+            "responses": [
+                "Pension Fund Regulatory and Development Authority (PFRDA)",
+                "The Government will ensure deposits are made in your account"
+            ]
+        },
+        {   
+            "tag": "atalyojana_after",
+            "patterns": [
+                "Who can continue to contribute to APY account of the subscriber in case of premature death?",
+                "In case of death of the subscriber due to any cause after the age of 60 years"
+            ],
+            "responses": [
+                "In case of death of subscriber, pension would be available to the spouse and on the death of both of them (subscriber and spouse), the pension wealth accumulated till age 60 of the subscriber would be returned to the nominee",
+                "Spouse of the subscriber",
+                "Your spouse or your selected nominee will be able to withdraw from the account"
+            ]
+        },
+        {   
+            "tag": "atalyojana_3",
+            "patterns": [
+                "What is the primary 'know your customer' document?"
+            ],
+            "responses": [
+                "National Aadhaar ID number"
+            ]
+        },
+        {   
+            "tag": "atalyojana_4",
+            "patterns": [
+                "How often is the option to switch to a monthly pension provided?",
+                "Will there be any option to increase or decrease the monthly contributionfor higher or lower pension amount?"
+            ],
+            "responses": [
+                "Once a year during the month of April ",
+                "Yes, a subscriber can opt to decrease or increase pension amount during the course of accumulation phase, once a year."
+            ]
+        },
+        {   
+            "tag": "atalyojana_5",
+            "patterns": [
+                "What is the maximum amount of income tax deduction for an investment in the Atal Pension Yojana?",
+                "What is the highest income tax deduction for an Atal Pension Yojana investment?"
+            ],
+            "responses": [
+                "1.5 LAKHS is the max amount of income tax deduction"
+            ]
+        },
+        {   
+            "tag": "atalyojana_6",
+            "patterns": [
+                "How will the contribution be deducted from the subscriber's savings bank account?",
+                "How will the contribution be taken out of the subscriber's bank account for savings?"
+            ],
+            "responses": [
+                "Auto debit facility to ensure timely transaction from your account"
+            ]
+        },
+        {   
+            "tag": "ujala_what",
+            "patterns": [
+                "What is UJALA?",
+                "What is ujala scheme?",
+                "UJALA",
+                "Describe the ujala.",
+                "Tell me about ujala",
+                "What is UJALA SCHEME"
+            ],
+            "responses": [
+                "The UJALA scheme also known as the LED-based Domestic Efficient Lighting Programme (DELP) aims to promote the efficient usage of energy for all i.e., its consumption, savings and lighting. This scheme is considered the world’s largest program.",
+                "Unnat Jyoti by Affordable LEDs for All (UJALA) is a project to distribute efficient LED lighting"
+            ]
+        },
+        {   
+            "tag": "ujala_when",
+            "patterns": [
+                "When was the Ujala launched?",
+                "When was the UJALA SCHEME launched?",
+                "UJALA Launch",
+                "Ujala Scheme introduced in?"
+            ],
+            "responses": [
+                "Prime Minister of India Narendra Modi launched this project on 5 Jan 2015."
+            ]
+        },
+        {   
+            "tag": "ujala_target",
+            "patterns": [
+                "Who is UJALA targeted at?",
+                "Who can use Unnat Jyoti by Affordable LED's for All?",
+                "Can I apply for THE UJALA SCHEME?",
+                "Who is Ujala open to?",
+                "Ujala Scheme is for",
+                "UJALA is for" 
+            ],
+            "responses": [
+                "Every domestic household is eligible to obtain the benefits of the UJALA Scheme",
+                "Every domestic/commercial/industrial/other customers of TPDDL having recent electricity bill or authorized ID proof"
+            ]
+        },
+        {   
+            "tag": "ujala_requirements",
+            "patterns": [
+                "What are the requirements for getting benefits of UJALA Scheme?",
+                "What is needed for Ujala",
+                "What are the prerequisites to receive Ujala Scheme benefits?",
+                "What conditions must be met to receive Ujala  benefits?",
+                "What do I need?"
+            ],
+            "responses": [
+                "You should have a metered connection from Electricity Distribution Company, Copy of the latest electricity bill, Copy of proof of identity, Copy of proof of residence."
+            ]
+        },
+        {   
+            "tag": "ujala_access",
+            "patterns": [
+                "Where can I get my light bulbs?",
+                "How will get my bulbs",
+                "Where will I get my product",
+                "How will light bulbs be distributed?"
+            ],
+            "responses": [
+                "Special counters/kiosks will be set up in the city at certain designated areas to facilitate the distribution of the LEDs under this scheme. The location details of these special counters/kiosks can be obtained from the website www.ujala.gov.in for the convenience of the customers.",
+                "Special counters/kiosks will be set up in various areas across the city to assist the distribution of LEDs under this programme. Customers may find these one-of-a-kind counters/kiosks on the website www.ujala.gov.in.",
+                "The location of counters is informed through leaflets, posters, advertisements for the consumers."
+            ]
+        },
+        {   
+            "tag": "ujala_products",
+            "patterns": [
+              "What Does The UJALA Scheme Offer To Customers?",
+              "What Can Customers Get Through The UJALA Scheme?",
+              "What do I get in Ujala scheme?"  
+            ],
+            "responses": [
+                "You can get 9W LED bulbs at an affordable cost of Rs. 70/-, 20W energy-efficient LED tube light at Rs. 220/-, BEE 5-star ceiling fans at Rs. 1,110/-"
+                
+            ]
+        },
+        {   
+            "tag": "ujala_1",
+            "patterns": [
+                "How many kWh has UJALA saved per annum?",
+                "How much kWh does UJALA save annually?",
+                "How many kWh has UJALA saved per year?"
+            ],
+            "responses": [
+                "It has saved about 47,778 Million of kWh"
+            ]
+        },
+        {   
+            "tag": "ujala_2",
+            "patterns": [
+                "How many MW of peak demand has been avoided?",
+                "How many megawatts of peak demand were saved?"
+            ],
+            "responses": [
+                "9,565"
+            ]
+        },
+        {   
+            "tag": "ujala_3",
+            "patterns": [
+                "How many tonnes of CO2 emissions have been reduced?",
+                "How many tonnes of CO2 have been saved?"
+            ],
+            "responses": [
+                "3,86 crore"
+            ]
+        },
+        {   
+            "tag": "ujala_4",
+            "patterns": [
+                "How much has the cost of LED bulbs decreased with UJALA?",
+                "How much is the cost?",
+                "How much sicount will I get?"
+            ],
+            "responses": [
+                "85% of the cost will be covered by the government"
+            ]
+        },
+        {   
+            "tag": "ujala_5",
+            "patterns": [
+                "What has the e-procurement of goods and services resulted in?",
+                "What has been the outcome of electronic purchase of products and services?"
+            ],
+            "responses": [
+                "Significant reduction in transaction cost and time"
+            ]
+        },
+        {   
+            "tag": "ujala_why",
+            "patterns": [
+                "What is the need of Ujala Scheme?",
+                "Why has been UJALA put in place?",
+                "Reason for ujala",
+                "Why should I opt for Ujala?"
+            ],
+            "responses": [
+                "To set up a phase-wise distribution of LEDs all over the country. To promote awareness among the general public regarding the importance of energy efficiency. To promote the efficient use of energy at a residential level all over India. To bring about the message of how energy efficiency impacts the preservation of the environment in the long run."
+            ]
+        },
+        {   
+            "tag": "ujala_payment",
+            "patterns": [
+                "How do I pay?",
+                "Do I have to pay?",
+                "What is the payment method?",
+                "Is there alternative to payment?"
+            ],
+            "responses": [
+                "The payment can be made in EMIs or upfront in full; there is a choice offered regarding the same."
+            ]
+        },
+        {
+            "tag": "PMKVY_launch",
+            "patterns": [
+                "When was the PMKVY scheme launched?",
+                "When was the PMKVY programme introduced?",
+                "When was the PMKVY programme introduced?",
+                "The PMKVY programme was started when?",
+                "When was the PMKVY programme first introduced?",
+                "When did the PMKVY programme begin?"
+            ],
+            "responses": [
+                "The PMKVY programme was introduced in 2015.",
+                "The PMKVY programme debuted in 2015.",
+                "In 2015, the PMKVY programme began.",
+                "In 2015, the PMKVY programme was introduced.",
+                "2015"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_purpose",
+            "patterns": [
+                "What is the purpose of providing free short duration skill training?",
+                "What does it mean to offer free short-term skill training?",
+                "What serves as the justification for free short-term skill training?",
+                "Why do free short-term skill training programmes exist?",
+                "Why offer free short-term skill training?",
+                "Why do free short-term skill training opportunities exist?",
+                "Why offering short-term skill training?",
+                "What is the purpose of the PMKVY scheme?",
+                "What is the PMKVY scheme's purpose?",
+                "What is the goal of the PMKVY scheme?",
+                "What is the PMKVY scheme for?",
+                "About PMKVY"
+            ],
+            "responses": [
+                "promote and support the development of skills.",
+                "encourage and promote skill development.",
+                "Encourage and promote the development of skills.",
+                "foster skill development and encourage it",
+                "facilitate and advance skill development",
+                "encourage and advance skill development",
+                "Create an ecosystem for the youth to make informed choices on the available skilling",
+                "Create an environment in which youth can make informed decisions about available skills.",
+                "Create an environment in which the youth can make informed decisions about available skills."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_promote",
+            "patterns": [
+                "How can the nation's skill development be encouraged and promoted?",
+                "What is one way to encourage and promote skill development in the country?",
+                "How can skill development be encouraged and promoted in the nation?",
+                "How can skill development be motivated and supported in the nation?",
+                "What is one way that the nation can encourage and promote skill development?"
+            
+            ],
+            "responses": [
+                "Free short-term skill training is one way to encourage and promote skill development in our nation.",
+                "One way to encourage and promote skill development in our country is by providing free short duration skill training",
+                "Encourage and promote the development of skills.",
+                "Free short-term skill training is one way to encourage and promote skill development in our nation.",
+                "By offering free, brief skill training, one can encourage and advance skill development in our nation.",
+                "providing free short duration skill training"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_idea",
+            "patterns": [
+                "What was the overall idea of PMKVY?",
+                "What was the main concept behind PMKVY?",
+                "What was the general premise behind PMKVY?",
+                "What did PMKVY's main premise entail?",
+                "What was the key focus behind PMKVY?"
+            
+            ],
+            "responses": [
+                "boost employability of youth",
+                "bolster youth employment",
+                "increase youth employment",
+                "enhancing youth employment",
+                "increase young people's employability"
+                
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_scaling_factor",
+            "patterns": [
+                "What was launched by scaling up sectors, geographies and by greater alignment with other programs of Government of India?",
+                "What was launched by expanding sectors and geographies and better aligning with other Government of India programmes?",
+                "What was launched by scaling up sectors, geographies and by greater alignment with other missions / programs of Government of India?",
+                "What was started by broadening the scope of the sector and the geographic scope and by a closer alignment with other Government of India programmes?"
+            ],
+            "responses": [
+                "PMKVY 2.0 (2016-20) was launched by scaling up sectors, geographies and by greater alignment with other missions / programs of Government of India such as ‘Make in India’, ‘Digital India’ and ‘Swachh Bharat Mission’",
+                "PMKVY 2.0(2016-20) was launched by expanding sectors and geographies, as well as increasing alignment with other Government of India missions and programmes such as 'Make in India,' 'Digital India,' and 'Swachh Bharat Mission.'",
+                "PMKVY 2.0(2016-20) was launched by expanding sectors and geographies, as well as increasing alignment with other government programmes such as 'Make in India,' 'Digital India,' and 'Swachh Bharat Mission.'",
+                "PMKVY 2.0 (2016-20) was launched by GOV with schemes such as ‘Make in India’, ‘Digital India’ and ‘Swachh Bharat Mission’",
+                "GOV launched PMKVY 2.0 (2016-20) with schemes such as 'Make in India,' 'Digital India,' and 'Swachh Bharat Mission.'",
+                "GOV launched PMKVY 2.0 (2016-20) along with schemes such as 'Make in India,' 'Digital India,' and 'Swachh Bharat Mission.'",
+                "GOV launched PMKVY 2.0 (2016-20) with schemes such as 'Make in India', 'Digital India', and 'Swachh Bharat Mission.",
+                "The government launched PMKVY 2.0 (2016-20) along with schemes such as 'Make in India,' 'Digital India,' and 'Swachh Bharat Mission.'"             
+
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_implemented",
+            "patterns": [
+                "When was PMKVY implemented?",
+                "When was PMKVY laid into use?",
+                "When did PMKVY go into effect?",
+                "When was PMKVY put into practise?",
+                "When was PMKVY successfully implemented?",
+                "When was PMKVY implemented successfully?",
+                "When was PMKVY successfully put into practise?",
+                "When did PMKVY begin to work effectively?"
+            
+            ],
+            "responses": [
+                "2015-16",
+                "PMKVY went into effect in 2015-16.",
+                "2015-16 saw the implementation of PMKVY"                
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_2.0_launch",
+            "patterns": [
+                "When was PMKVY 2.0 implemented?",
+                "When was PMKVY 2.0 released?",
+                "When did PMKVY 2.0 go live?",
+                "When was PMKVY 2.0 launched?",
+                "When was PMKVY 2.0 announced?"            
+            ],
+            "responses": [
+                "15th July 2016",
+                "PMKVY was 2.0 implemented on 15th July 2016",
+                "On July 15, 2016, PMKVY 2.0 was launched.",
+                "On July 15, 2016, PMKVY 2.0 was released.",
+                "On July 15, 2016, PMKVY 2.0 went live."                
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_2.0_complete",
+            "patterns": [
+                "When was PMKVY 2.0 scheduled to be completed?",
+                "When was PMKVY 2.0 supposed to be finished?",
+                "When was PMKVY 2.0 expected to be finished?",
+                "When was PMKVY 2.0 due to be finished?",
+                "When was PMKVY 2.0 announced?"            
+            ],
+            "responses": [
+                "PMKVY 2.0 scheduled to be completed on 31st March 2020.",
+                "31st March 2020",
+                "PMKVY 2.0 is scheduled to be completed on March 31, 2020.",
+                "PMKVY 2.0 is expected to be completed on March 31, 2020."          
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_extension",
+            "patterns": [
+                "How long has the scheme been extended?",
+                "How long has the scheme been in place?",
+                "How long has the scheme been extended?",
+                "How long has the programme been in effect?"       
+            ],
+            "responses": [
+                "one year",
+                "a year",
+                "The scheme has been extended for another year."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_reorienting",
+            "patterns": [
+                "What is the purpose of reorienting the scheme?",
+                "What is the goal of repositioning the scheme?",
+                "What is the goal of reorienting the scheme?",
+                "Why is the scheme being reoriented?"       
+            ],
+            "responses": [
+                "be in sync with the present scenario of policy changes and changing priority",
+                "be in sync with the current policy scenario of changing priorities",
+                "be in sync with the current scenario of policy changes and shifting priorities",
+                "be current with policy changes and shifting priorities"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_3.0_launch",
+            "patterns": [
+                "What is the purpose of PMKVY 3.0?",
+                "What exactly is the goal of PMKVY 3.0?",
+                "What is the goal of PMKVY 3.0?",
+                "What does PMKVY 3.0 serve?"       
+            ],
+            "responses": [
+                "speed up the implementation",
+                "accelerate the implementation",
+                "expedite implementation",
+                "intensify implementation"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_phase",
+            "patterns": [
+                "How many phases will the PMKVY 3.0 scheme be implemented in?",
+                "How many phases will the PMKVY 3.0 scheme go through?"     
+            ],
+            "responses": [
+                "two",
+                "two phases",
+                "PMKVY 3.0 scheme was implemented in two phases",
+                "PMKVY 3.0 was implemented in two stages."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_implemented_3.0",
+            "patterns": [
+                "When was PMKVY 3.0 be implemented?",
+                "When was PMKVY 3.0 released?",
+                "When did PMKVY 3.0 go live?",
+                "When did PMKVY 3.0 go into effect?",
+                "When is the first phase of PMKVY 3.0",
+                "When was the first phase of PMKVY 3.0 launched?",
+                "When did PMKVY 3.0's first phase begin?"
+            ],
+            "responses": [
+                "2020-21",
+                "PMKVY 3.0 was launched in 2020-21.",
+                "PMKVY 3.0 was implemented in 2020-21",
+                "PMKVY 3.0 went into effect in 2020-21.",
+                " in 2020-21 was the first phase",
+                "PMKVY 3.0's first phase began in 2020-21.",
+                "The first phase of PMKVY 3.0 was in 2020-21."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_name_first_phase",
+            "patterns": [
+                "What is the name of the first phase of PMKVY?",
+                "What is the name of PMKVY's first phase?",
+                "What is the name of the first phase of PMKVY?",
+                "name for PMKVY first phase",
+                "Which was the PMKVY first phase?"
+            ],
+            "responses": [
+                "PMKVY 3.0",
+                "The first phase was PMKVY 3.0.",
+                "PMKVY 3.0 was the first phase.",
+                "The first stage was PMKVY 3.0."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_launch_second_phase",
+            "patterns": [
+                "When is the second phase of the scheme?",
+                "When will the scheme's second phase begin?",
+                "When does the scheme's second phase begin?",
+                "When is the scheme's second phase?",
+                "When will the scheme's second phase begin?"
+            ],
+            "responses": [
+                "2021-2026",
+                "second phase begins from 2021-2026",
+                "The second phase begins in 2021-2026.",
+                "The second phase runs from 2021 to 2026.",
+                "The second phase begins in 2021 and lasts until 2026."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_NAPS",
+            "patterns": [
+                "What is NAPS?",
+                "What exactly is NAPS?",
+                "What precisely is NAPS?",
+                "fullform for NAPS"
+            ],
+            "responses": [
+                "National Apprenticeship Promotion Scheme",
+                "NAPS stands for National Apprenticeship Promotion Scheme"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_PMMY",
+            "patterns": [
+                "What is PMMY?",
+                "What exactly is PMMY?",
+                "What precisely is PMMY?",
+                "fullform for PMMY"
+            ],
+            "responses": [
+                "Pradhan Mantri MUDRA Yojana",
+                "NAPS stands for Pradhan Mantri MUDRA Yojana"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_youth_coverage",
+            "patterns": [
+                "How many youth will be covered by the PMKVY scheme?",
+                "How many young people will be covered by the PMKVY programme?",
+                "How many young people will be covered by the PMKVY scheme?",
+                "How many young people will be enrolled in the PMKVY scheme?"
+            ],
+            "responses": [
+                "10 million",
+                "10 million youth",
+                "10 million youth covered"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_idproof",
+            "patterns": [
+                "What is the verifiable identity proof?",
+                "What can be used as ID proof?",
+                "What can be used as identification?",
+                "What documents can be used as identification?"
+            ],
+            "responses": [
+                "Aadhar, Voter id and ration can used as ID proof",
+                "Aadhar, voter id, and ration cards can all be used as ID proof.",
+                "Aadhar, voter id, and ration cards can all be used as identification documents."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_contribution",
+            "patterns": [
+                "What does India's workforce contribute to?",
+                "What does India's workforce contribute?"
+            ],
+            "responses": [
+                "India's workforce contribute to growth of our nation",
+                "The workforce in India contributes to the growth of our country.",
+                "India's workforce contributes to our country's growth.",
+                "The workforce in India contributes to the development of our country."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_SSDM",
+            "patterns": [
+                "What is another name for State Skill Development Missions?",
+                "What does SSDM stand for?",
+                "What exactly does SSDM stand for?"
+            ],
+            "responses": [
+                "State Skill Development Missions",
+                "SSDM is an abbreviation for State Skill Development Missions."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_SSDM",
+            "patterns": [
+                "What is another name for State Skill Development Missions?",
+                "What does SSDM stand for?",
+                "What exactly does SSDM stand for?"
+            ],
+            "responses": [
+                "State Skill Development Missions",
+                "SSDM is an abbreviation for State Skill Development Missions."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_mode",
+            "patterns": [
+                "What type of reforms would be introduced to the assessment ecosystem?",
+                "What kinds of reforms would be implemented in the assessment ecosystem?",
+                "What kinds of changes would be made to the assessment ecosystem?"
+            ],
+            "responses": [
+                "Common / Digital mode of Training",
+                "Training Mode: Common / Digital"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_CACs",
+            "patterns": [
+                "What are CACs?",
+                "What exactly are CACs?",
+                "fullform for CACs"
+            ],
+            "responses": [
+                "Assessment Centres",
+                "Centers for Evaluation",
+                "Common Assessment Centres"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_benifit_holder",
+            "patterns": [
+                "Who is the Short Term Training expected to benefit?",
+                "Who is expected to benefit from Short Term Training?",
+                "Who will benefit from Short Term Training?",
+                "Who is expected to gain from Short Term Training?"
+            ],
+            "responses": [
+                "candidates of Indian nationality who are either school/college dropouts",
+                "candidates of Indian origin who have dropped out of school or college",
+                "candidates of Indian origin who are either school or college dropouts",
+                "Indian nationals who have stopped attending school or college"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_assistance",
+            "patterns": [
+                "Who provides placement assistance to candidates after successful assessment?",
+                "After a successful evaluation, who assists applicants with placement?",
+                "After a successful evaluation, who gives candidates with placement assistance?",
+                "After a successful evaluation, who helps applicants find jobs?",
+                "After a successful evaluation, who assists applicants with placement?"
+            ],
+            "responses": [
+                "Training Partners",
+                "Training Partners provide placement assistance to candidates after successful assessment",
+                "After a successful exam, candidates can receive placement assistance from Training Partners.",
+                "Following successful evaluation, Training Partners help applicants with placement."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_ass",
+            "patterns": [
+                "Who pays for the training and assessment fees under PMKVY?",
+                "Who pays the PMKVY training and assessment fees?",
+                "Who pays the training and assessment expenses under PMKVY?"
+            ],
+            "responses": [
+                "Athe Government",
+                "the Government pays for the training and assessment fees under PMKVY",
+                "Under PMKVY, the government pays for training and assessment expenses.",
+                "Under PMKVY, the government pays the training and evaluation expenses."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_knowledge_gap",
+            "patterns": [
+                "What can PIAs offer to address knowledge gaps?",
+                "What can PIAs do to fill knowledge gaps?",
+                "What can PIAs provide to fill knowledge gaps?"
+            ],
+            "responses": [
+                "Bridge Courses",
+                "PIAs can offer Bridge Courses to address knowledge gaps.",
+                "Bridge Courses can be offered by PIAs to fill knowledge gaps.",
+                "Bridge Courses can be provided by PIAs to fill knowledge gaps.",
+                "Bridge Courses can be offered by PIAs to bridge knowledge gaps."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_spec_proj",
+            "patterns": [
+                "What does the Special Projects component of PMKVY aim to do?",
+                "What does PMKVY's Special Projects division want to accomplish?",
+                "What is the Special Projects component of PMKVY's goal?",
+                "What is the purpose of PMKVY's Special Projects component?"
+            ],
+            "responses": [
+                "facilitate trainings in special areas and/or premises of Government bodies, Corporate",
+                "facilitate trainings at government special regions and/or corporate facilities.",
+                "enable trainings at government special regions and/or corporate headquarters",
+                "facilitate trainings at government special regions and/or corporate facilities.",
+                "facilitate trainings in government special regions and/or corporate sites"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_meals",
+            "patterns": [
+                "How often are Kaushal and Rozgar Melas conducted?",
+                "How frequently are Kaushal and Rozgar Melas held?",
+                "How often are Kaushal and Rozgar Melas held?",
+                "How frequently are the Kaushal and Rozgar Melas held?"
+            ],
+            "responses": [
+                "every six months",
+                "Kaushal and Rozgar Melas conducted every six months",
+                "enable trainings at government special regions and/or corporate headquarters",
+                "Every six months, the Kaushal and Rozgar Melas are held.",
+                "Every six months, Kaushal and Rozgar Melas are held."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_payment",
+            "patterns": [
+                "How much will be paid to Training Providers on commencement of training batches?",
+                " What percentage of the cost is based on the start of training batches?",
+                "What percentage of the cost of placement verification is subject to revisions by the Common Cost Norms committee?"
+            ],
+            "responses": [
+                "30%"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMKVY_attempts",
+            "patterns": [
+                "How many times can a candidate enroll for training under PMKVY?",
+                "How many times can a candidate enroll for PMKVY training?",
+                "What is the maximum number of times a candidate may enrol in PMKVY training?"
+            ],
+            "responses": [
+                "twice",
+                "two times"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMSBY_insurance",
+            "patterns": [
+                "What was the accidental insurance cover announced by the Indian government in the 2015 Budget?",
+                "HWhat was the Indian government's accidental insurance cover announced in the 2015 budget?",
+                "What was the accidental insurance coverage offered by the Indian Government, as announced in the 2015"
+            ],
+            "responses": [
+                "Pradhan Mantri Suraksha Bima Yojana",
+                "Pradhan Mantri Suraksha The Bima Yojana Indian Government's accidental insurance cover, which was unveiled in the 2015 Budget.",
+                "Suraksha Pradhan Mantri The Indian Government's Bima Yojana, or accidental insurance cover, was introduced in the 2015 Budget."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMSBY_debit",
+            "patterns": [
+                "how the amount is debited from the bank account for PMSBY ?",
+                "How is the money deducted from the bank account for PMSBY?",
+                "How is the payment deducted from the bank account for PMSBY?",
+                "How is the money collected from my bank account?"
+            ],
+            "responses": [
+                "The premium amount is automatically deducted from the plan holder's bank account.",
+                "The premium amount is automatically debited from the bank account of the scheme holder",
+                "The premium is automatically deducted from the plan holder's bank account."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMSBY_amount",
+            "patterns": [
+                "what is the paid to the nominee if the subscriber dies in an accident?",
+                "What is the nominee paid if the subscriber dies in an accident?",
+                "What is the amount given to the nominee if the subscriber dies in an accident?",
+                "What is the nominee paid if the subscriber is killed in an accident?"
+            ],
+            "responses": [
+                "Rs.2 lakh paid to the nominee if the subscriber dies in an accident or if he is fully disabled.",
+                "If the subscriber dies in an accident or becomes completely incapacitated, the nominee will get Rs.2 lakh.",
+                "If the subscriber dies in an accident or becomes totally incapacitated, the nominee will get Rs.2 lakh."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMSBY_eligible",
+            "patterns": [
+                "Who are eligible to apply for PMSBY scheme?",
+                "Who is eligible to apply for PMSBY programme?",
+                "Who is eligible to apply for PMSBY scheme?",
+                "Who may apply for PMSBY scheme?"
+            ],
+            "responses": [
+                "Individuals between 18 years and 70 years are eligible to apply for this scheme.",
+                "Individuals between the ages of 18 and 70 are able to apply for this plan.",
+                "Individuals aged 18 to 70 are able to apply for this service.",
+                "This scheme is open to those aged 18 to 70."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMSBY_include",
+            "patterns": [
+                "PMSBY scheme also covers?",
+                "PMSBY plan also includes?",
+                "PMSBY scheme also will include?",
+                "PMSBY scheme also involves?"
+            ],
+            "responses": [
+                "covers people suffering with both partial and permanent disability.",
+                "encompasses persons with both temporary and permanent disabilities",
+                "includes both partial and permanent disability.",
+                "People with both partial and permanent impairment are covered."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMSBY_benefit",
+            "patterns": [
+                "Other method through which the subscribers can get the PMSBY benefit?",
+                "Another way for subscribers to receive the PMSBY benefit?",
+                "Another way for subscribers to PMSBY benefit?",
+                "Other ways for subscribers to PMSBY benefit?"
+            ],
+            "responses": [
+                "Most of the reputed banks allow the subscribers to take the policy through internet banking .",
+                "Most reputable banks enable users to purchase policies using online banking.",
+                "Most reputable banks enable users to purchase insurance using online banking.",
+                "Most major banks allow users to purchase policies using online banking.",
+                "Most reputable banks enable individuals to buy policies via online banking."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMSBY_internet_banking",
+            "patterns": [
+                "how can the subscriber avail amount via internet banking?",
+                "How can the subscriber obtain funds through online banking?",
+                "How may the subscriber obtain funds using online banking?",
+                "How may a subscriber obtain funds using online banking?",
+                "How can the subscriber obtain funds through internet banking?"
+            ],
+            "responses": [
+                "The subscriber will have to log in to the Internet banking account and enroll for the scheme.",
+                "The subscriber must sign in to their Internet banking account and enrol in the scheme.",
+                "The user must log in to their Internet banking account and enrol in the scheme.",
+                "The subscriber must log in to his or her Internet banking account to join in the plan.",
+                "The subscriber must log in to his or her Internet banking profile to join in the scheme."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMSBY_renewed",
+            "patterns": [
+                "when can the be PMSBY policy be renewed?",
+                "When will the insurance be renewed?",
+                "When can the PMSBY policy be renewed?",
+                "When is the policy due to be renewed?",
+                "When will the PMSBY plan be renewed?"
+            ],
+            "responses": [
+                "The policy will be renewed on an  annual basis.",
+                "The policy will be renewed every year.",
+                "The policy will be renewed on a yearly basis.",
+                "The policy will be renewed each year.",
+                "The policy will be renewed annually."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMSBY_cancel_renew",
+            "patterns": [
+                "what if the subscriber do not wish to renew?",
+                "What if the subscriber decides not to renew?",
+                "What if the subscriber does not want to renew?",
+                "What happens if the subscriber decides not to renew?",
+                "What if the subscriber chooses not to renew?"
+            ],
+            "responses": [
+                "Subscriber must send a cancellation request to the appropriate bank if you do not wish to renew.",
+                "If you do not want to renew, you must file a cancellation request to the relevant bank.",
+                "If you do not desire to renew, you must file a cancellation request to the relevant bank.",
+                "If you do not want to renew your service, you must make a cancellation notice to the appropriate bank.",
+                "If you do not wish to renew, you must send a cancellation request to the right bank.",
+                "Subscriber can also send a message through their registered mobile number to the toll free numbers of the banks and the insurance companies.",
+                "Subscribers may also send a message to the toll-free lines of banks and insurance firms using their registered cellphone number",
+                "Members can also deliver texts to toll-free calls for insurance and banking providers with their registered mobile number.",
+                "Customers can also send a message to toll-free calls for banks and insurance firms via their enrolled mobile number."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMSBY_methods_cancel_renew",
+            "patterns": [
+                "Methods via which a member can cancel their PMSBY subscription?",
+                "Methods for a member to terminate their subscription??",
+                "Can a member terminate their PMSBY subscription?",
+                "How can a member terminate their subscription?",
+                "Methods for a member to cancel their membership"
+            ],
+            "responses": [
+                "members can cancel their subscription via registered mobile number or via cancellation request to appropriate bank.",
+                "Members can cancel their membership by submitting a cancellation request to the appropriate banks via their registered mobile number.",
+                "via registered mobile number or via cancellation request to appropriate bank.",
+                "Through registered mobile number or by cancellation request to relevant bank.",
+                "registered mobile number or cancellation request.",
+                "registered mobile phone number or a cancellation request.",
+                "enrolled mobile number or cancellation request.",
+                "Members can also deliver texts to toll-free calls for insurance and banking providers with their registered mobile number.",
+                "Customers can also send a message to toll-free calls for banks and insurance firms via their enrolled mobile number."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMSBY_renewed_method",
+            "patterns": [
+                "How can the be PMSBY policy be renewed?",
+                "How will the insurance be renewed?",
+                "How can the PMSBY policy be extended?",
+                "How is the policy going to be renewed?",
+                "How will the PMSBY plan be renewed?"
+            ],
+            "responses": [
+                "By using the auto-debit option , you can renew PMSBY.",
+                "You may renew PMSBY by utilising the auto-debit option.",
+                "You may renew PMSBY utilising the auto-debit option.",
+                "Users may continue PMSBY using the auto-debit option.",
+                "Users can extend PMSBY using the auto-debit option."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMSBY_about",
+            "patterns": [
+                "What is the Pradhan Mantri Suraksha Bima Yojana?",
+                "How does the Pradhan Mantri Suraksha Bima Yojana work?",
+                "About Pradhan Mantri Suraksha Bima Yojana?",
+                "discussing the Pradhan Mantri Suraksha Bima Yojana"
+            ],
+            "responses": [
+                "Pradhan Mantri Suraksha Bima Yojana is a government backed accident insurance scheme.",
+                "The Pradhan Mantri Suraksha Bima Yojana (PMSBY) is a government-sponsored accident insurance programme.",
+                "PMSBY is a government backed accident insurance scheme.",
+                "PMSBY is a government-backed accident insurance plan.",
+                "The PMSBY is a government-sponsored accident insurance programme.",
+                "a government backed accident insurance scheme",
+                "a government-sponsored accident benefit plan",
+                "a govt accident health plan"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMSBY_fullform",
+            "patterns": [
+                "PMSBY stands for?",
+                "What does PMSBY stand for?",
+                "What does PMSBY mean?",
+                "PMSBY is an abbreviation for?",
+                "When will the PMSBY plan be renewed?",
+                "Fullform for PMSBY?"
+            ],
+            "responses": [
+                "Pradhan Mantri Suraksha Bima Yojana",
+                "PMSBY stands for Pradhan Mantri Suraksha Bima Yojana .",
+                "PMSBY is an abbreviation for Pradhan Mantri Suraksha Bima Yojana.",
+                "PMSBY refers for Pradhan Mantri Suraksha Bima Yojana."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMSBY_advantage",
+            "patterns": [
+                "What is the benefit of the PMSBY scheme?",
+                "What is the PMSBY scheme's advantage?",
+                "What are the advantages of the PMSBY scheme?",
+                "why apply for PMSBY?",
+                "Why should you apply for PMSBY?"
+            ],
+            "responses": [
+                "one of the cheapest insurance cover",
+                "one of the most affordable insurance policies",
+                "one of the least expensive insurance policies",
+                "one of the more inexpensive insurance plans"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMSBY_banks",
+            "patterns": [
+                "What is the benefit of the PMSBY scheme?",
+                "List of banks that participate in the Pradhan Mantri Suraksha Bima Yojana initiative.",
+                "Which Banks offers PMSBY benefits?",
+                "Which banks provide PMSBY benefits?",
+                "Which banks give PMSBY benefits?"
+            ],
+            "responses": [
+                "Allahabad Bank, Axis Bank, Bank of India, Bank of Maharashtra, Bharatiya Mahila Bank, Canara Bank, Central Bank, Corporation Bank, Dena Bank",
+                "Federal Bank, HDFC Bank, ICICI Bank, IDBI Bank, IndusInd Bank, Kerala Gramin Bank, Kotak Bank"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMSBY_documents",
+            "patterns": [
+                "Documents Required for Pradhan Mantri Suraksha Bima Yojana",
+                "Pradhan Mantri Suraksha Bima Yojana Documents Needed",
+                "what are the documents Required for PMSBY?",
+                "What paperwork is needed for PMSBY?",
+                "What papers are need for PMSBY?"
+            ],
+            "responses": [
+                "The Pradhan Mantri Suraksha Bima Yojana application form is to be duly filled. The details to be filled are:Proof Id, Aadhaar card, Contact information, Nominee details Application form (English, Hindi, Bengali, Marathi, Oriya, Telugu, Tamil or Gujarati).",
+                "Aadhaar card, contact information, nominee information, and the application form are the details that must be filled out (English, Hindi, Bengali, Marathi, Oriya, Telugu, Tamil or Gujarati).",
+                "The fields that must be filled out are: Application form, Proof of Identification, Aadhaar Card, Contact Information, and Nominee Details (English, Hindi, Bengali, Marathi, Oriya, Telugu, Tamil or Gujarati).",
+                "The fields that must be filled out are: Application form, Proof of Identification, Aadhaar Card, Contact Information, and Nominee Details."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMSBY_partial_disable",
+            "patterns": [
+                "Will the subscriber receive any benefit if he or she suffers partial disability due to an accident?",
+                "When will the insurance be renewed?If a subscriber experiences a partial handicap as a result of an accident, would they be compensated in any way?",
+                "Will the subscriber receive any benefits if an accident causes a partial disability?",
+                "If a subscribers suffers a partial disability as an outcome of an accident, are they eligible for any benefits?"
+            ],
+            "responses": [
+                "Yes, the subscriber will receive Rs.1 lakh if he suffers from partial disability due to an accident.",
+                "Yes, if the subscriber has partial disability as a result of an accident, he would earn Rs. 1 lakh.",
+                "Yes, the subscriber would receive Rs. 1 lakh in case of emergency partial disability.",
+                "In the case of a partial disability caused by an accident, the subscriber would get Rs. 1 lakh."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMSBY_two_insurance",
+            "patterns": [
+                "Will I get the benefits of this scheme if I have another insurance scheme?",
+                "If I already hold an insurance plan, will I still be eligible for this one's benefits?",
+                "If I already have an insurance plan, would I still be able to profit from this one?",
+                "Even if I have another insurance plan, will I still be able to take use of this one?"
+            ],
+            "responses": [
+                "Yes, you will get the benefits of the scheme in addition to any existing accidental insurance cover.",
+                "Yes, in addition to any current accidental insurance coverage, you will receive the advantages of the plan.",
+                "Yes, you will receive the program's advantages in addition to your current accidental insurance coverage.",
+                "In addition to any current accidental health insurance, you will get the scheme's benefits."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMSBY_insufficient_funds",
+            "patterns": [
+                "What will happen if I have insufficient balance in my savings account and the account has been closed?",
+                "What will happen if my savings account has been closed and I have insufficient funds?",
+                "What will happen if there is not enough money in my savings account after it has been closed?",
+                "What would happen if my savings account has been cancelled and there is not enough money in it?"
+            ],
+            "responses": [
+                "In the event you have insufficient balance in your savings account and it has been closed or if you don't have sufficient balance to keep the policy in force, then your accident cover assurance will be terminated.",
+                "Your accident cover assurance will be cancelled if your savings account has inadequate funds and has been closed, or if you don't have enough money to maintain the policy in effect.",
+                "Your accident cover assurance will be cancelled if you have inadequate amount in your savings account and it has been closed.",
+                "If you have insufficient funds in your savings account and it has been closed, your accident insurance will be terminated."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMSBY_expenses_reimbursed",
+            "patterns": [
+                "Can the hospitalization expenses be reimbursed under PMSBY scheme?",
+                "Can hospitalisation costs be covered under PMSBY plan?",
+                "Can this programme pay hospitalisation costs?",
+                "Can PMSBY system pay hospitalisation expenses?"
+            ],
+            "responses": [
+                "No, the hospitalization expenses following the accident that results in death or disablement is not reimbursed.",
+                "No, hospitalisation expenditures incurred as a consequence of an accident that ends in death or disability are not reimbursed.",
+                "No, hospitalisation costs incurred as a result of an accident that ends in death or disability are not reimbursed.",
+                "No, hospitalisation costs caused as a result of an accident that results in death or disability are not paid."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMSBY_subscriber_missing",
+            "patterns": [
+                "If the subscriber is missing and his or her death is not confirmed, will the nominee or the legal heir get any benefits?",
+                "Will the nominee or legal successor receive benefits if the subscriber goes missing and his or her death is not confirmed?",
+                "Will the nominee any advantages if the subscriber goes missing and his or her death is not confirmed?",
+                "Will the nominee or legal successor receive benefits if the member is missing and his or her demise is not confirmed?"
+            ],
+            "responses": [
+                "Insurance benefit is only paid on the confirmation of the death of the insured or on expiry of the period that is specified by the law to presume the death of a person, which is 7 years.",
+                "Insurance benefits are only given on confirmation of the insured's death or at the expiration of the 7-year term defined by law to infer the death of a person.",
+                "Insurance benefits are only paid out after the insured's death is confirmed or when the 7-year time set by law to infer a person's death expires.",
+                "Insurance benefits are only paid upon confirmation of the insured's death or at the end of the 7-year time set by law to infer a person's death."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMJJBY_subscriber",
+            "patterns": [
+                "Who are the participants for PMJJBY?",
+                "Who are the PMJJBY participants?",
+                "Who are the participants in PMJJBY?"
+            ],
+            "responses": [
+                "Participating Banks will be the Master policy holders",
+                "The Master policy holders will be participating banks.",
+                "The Master policy holders are the participating banks.",
+                "The Master policyholders will be cooperating banks."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMJJBY_about",
+            "patterns": [
+                "What is the PMJJBY scheme?",
+                "What exactly is the PMJJBY scheme?",
+                "What is the PMJJBY plan?"
+            ],
+            "responses": [
+                "one year cover, renewable from year to year, Insurance Scheme offering life insurance cover for death due to any reason",
+                "one year cover, renewed year after year, insurance scheme providing life insurance protection for any cause",
+                "one year cover, renewed from year to year, insurance scheme providing life insurance protection for any cause",
+                "one year cover, extendable from year to year, insurance scheme providing life insurance cover for any reason",
+                "The scheme is a one year cover Term Life Insurance Scheme, renewable from year to year, offering life insurance cover for death due to any cause.",
+                "The programme is a one-year Term Life Insurance Scheme that is renewed from year to year and provides life insurance coverage for death from any reason.",
+                "The scheme is a one-year Term Life Plan that is renewed from year to year and provides coverage for life insurance for any reason for death."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMJJBY_duration",
+            "patterns": [
+                "How long is the scheme for the life insurance PMJJBy scheme?",
+                "How long is the PMJJBY plan for life insurance?",
+                "How long does the PMJJBY plan for life insurance last?",
+                "How long will the PMJJBY plan for life insurance last?",
+                "How long is the PMJJBY scheme for insurance coverage?"
+            ],
+            "responses": [
+                "one year ",
+                "one full year",
+                "one year cover"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMJJBY_type",
+            "patterns": [
+                "What type of insurance scheme is offered by the PMJJBY scheme?",
+                "What kind of insurance scheme does the PMJJBY scheme provide?",
+                "The PMJJBY scheme provides what kind of insurance scheme?",
+                "What form of insurance scheme does the PMJJBY scheme provide?"
+            ],
+            "responses": [
+                "life insurance cover for death due to any reason",
+                "Life insurance protects against death for any reason.",
+                "Life insurance provides protection in the event of death for any reason.",
+                "Life insurance provides protection for any cause of death.",
+                "Life insurance provides coverage for any reason for death."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMJJBY_participant",
+            "patterns": [
+                "Who will be able to participate in PMJJBY scheme?",
+                "Who will be eligible to take part in the scheme?",
+                "Who will be eligible to participate in the scheme?",
+                "Who may take part in the scheme?"
+            ],
+            "responses": [
+                "All savings bank account holders in the age 18 to 50 years in participating banks ",
+                "All savings bank account holders in the age 18 to 50 years in participating banks ",
+                "All savings bank account holders aged 18 to 50 in participating banks",
+                "All savings bank account holders at banks in between ages of 18 and 50."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMJJBY_nature",
+            "patterns": [
+                "What is the nature of the PMJJBY scheme?",
+                "What exactly is the PMJJBY scheme?",
+                "What is the PMJJBY scheme's purpose?",
+                "What is the scope of the PMJJBY scheme?"
+            ],
+            "responses": [
+                "All savings bank account holders in the age 18 to 50 years in participating banks ",
+                "All savings bank account holders in the age 18 to 50 years in participating banks ",
+                "All savings bank account holders aged 18 to 50 in participating banks",
+                "All savings bank account holders at banks in between ages of 18 and 50."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "PMJJBY_premium",
+            "patterns": [
+                "How will the premium be paid?",
+                "How is the premium going to be paid?",
+                "What method will be used to pay the premium?",
+                "How is the premium going to be paid?"
+            ],
+            "responses": [
+                "All savings bank account holders in the age 18 to 50 years in participating banks ",
+                "All savings bank account holders in the age 18 to 50 years in participating banks ",
+                "All savings bank account holders aged 18 to 50 in participating banks",
+                "All savings bank account holders at banks in between ages of 18 and 50."
+            ],
+            "context": [
+                ""
+            ]
+        }
+       ]
+}
