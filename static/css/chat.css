@@ -69,6 +69,34 @@
     border-radius: 10px 10px 0px 0px;
     padding: 10px 0px 10px 10px;
 }
+.suggestion-panel{
+    display: flex;
+    float: left;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 0px 10px 10px;
+}
+#panel{
+
+}
+.suggestion-panel button{
+    background-color: #6a6969; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 15px;
+    cursor: pointer;
+    /* margin: 12px; */
+}
 
 .chat-bar-icons {
     display: flex;
