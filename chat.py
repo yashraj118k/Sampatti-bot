@@ -26,14 +26,10 @@ model=NeuralNet(input_size, hidden_size, output_size)
 model.load_state_dict(model_state)
 model.eval()
 
-bot_name="SampattiBot"
-print("Let's chat! type 'quit' to exit")
-while True:
-    sentence=input('You: ')
-    if sentence=="quit":
-        break
+bot_name="SamBot"
 
-    sentence=tokenize(sentence)
+def get_response(msg):
+    sentence=tokenize(msg)
     x= bag_of_words(sentence, all_words)
     x=x.reshape(1,x.shape[0])
     x=torch.from_numpy(x)
@@ -48,13 +44,23 @@ while True:
     prob=probs[0][predicted.item()]
     # print(prob)
 
-    if prob.item()>0.75:
-        for intent in intents["intents"]:
-            if tag==intent["tag"]:
-                print(f"{bot_name}: {random.choice(intent['responses'])}")
-    else:
-        print(f"{bot_name}: I do not understand...")
+    if prob.item() > 0.75:
+        for intent in intents['intents']:
+            if tag == intent["tag"]:
+                return random.choice(intent['responses'])
+    
+    return "I do not understand..."
 
+if __name__ == "__main__":
+    print("Let's chat! (type 'quit' to exit)")
+    while True:
+        # sentence = "do you use credit cards?"
+        sentence = input("You: ")
+        if sentence == "quit":
+            break
+
+        resp = get_response(sentence)
+        print(resp)
 
 
 
