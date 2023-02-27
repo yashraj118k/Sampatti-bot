@@ -140,3 +140,67 @@ $("#textInput").keypress(function (e) {
         getResponse();
     }
 });
+
+function voiceSearch(){
+    const startBtn=document.querySelector("#voice-search");
+    const recognition=new webkitSpeechRecognition();
+    recognition.continuous=false;
+    recognition.lang="en-US";
+    recognition.interimResults=false;
+    recognition.maxAlternatives=1;
+    
+    const synth=window.speechSynthesis;
+    
+    recognition.start();
+
+    
+    
+    
+    recognition.onresult=(e)=>{
+        const transcript=e.results[e.results.length-1][0].transcript.trim();
+        userQuery(transcript);
+        recognition.stop();
+        let text1 = transcript;
+        if (text1 === "") {
+            return botResponse("error");
+        }
+        let msg1 = { name: "User", message: text1 }
+        this.messages.push(msg1);
+        
+        fetch('http://127.0.0.1:5000/predict', {
+            method: 'POST',
+            body: JSON.stringify({ message: text1 }),
+            mode: 'cors',
+            headers: {
+              'Content-Type': 'application/json'
+            }
+          })
+          .then(r => r.json())
+       
+          .then(r => {
+            let msg2 = { name: "SamBot", message: r.answer };
+            this.messages.push(msg2);
+            this.output=r.answer;
+
+            })
+        .catch((error) => {
+            console.error('Error:', error);
+            utter.text="Error";
+            synth.speak(utter);
+          });
+          
+        
+          let utter=new SpeechSynthesisUtterance();
+          utter.onend=()=>{
+              recognition.stop();
+          };
+        
+        
+        utter.text=output;
+        synth.speak(utter);
+        botResponse(output);
+        
+        
+        
+    }
+}
