@@ -17,3 +17,5 @@ document.addEventListener('DOMContentLoaded', function() {
         xhr.send(JSON.stringify({ age: age, gender: gender, income: income })); // send user inputs as JSON data
     });
 });
+
+

@@ -57,7 +57,7 @@ schemes = [
 
 @app.route('/')
 def index():
-    return app.send_static_file('index.html') # serve the HTML file
+    return app.send_static_file('suggest.html') # serve the HTML file
 
 @app.route('/recommendation', methods=['POST'])
 def recommendation():
@@ -77,5 +77,5 @@ def recommendation():
         recommendation += f"{scheme['name']} - {scheme['description']}<br>"
         return jsonify(recommendation)
 
-if name == 'main':
-app.run(debug=True)
+if __name__ == 'main':
+    app.run(debug=True)

@@ -3,8 +3,40 @@
   <head>
     <title>Government Scheme Recommendation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
     <style>
       body {
+        background-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--TFq7Dlxs--/c_imagga_scale,f_auto,fl_progressive,h_720,q_auto,w_1280/https://dev-to-uploads.s3.amazonaws.com/i/uskd4x557wno7irs1q71.png");
         font-family: Arial, sans-serif;
         background-color: #f2f2f2;
         margin: 0;
@@ -116,7 +148,7 @@
 
           // Make an AJAX request to the server to get the recommended schemes
           $.ajax({
-            url: "/recommend-schemes",
+            url: "/",
             type: "POST",
             data: {
               age: age,
@@ -135,5 +167,38 @@
         });
       });
     </script>
+    <section id="hero">
+      <div class="hero-container">
+        <div
+          id="heroCarousel"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+          data-bs-interval="5000"
+        >
+          <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+          <div class="carousel-inner" role="listbox">
+            <!-- Slide 1 -->
+            <div
+              class="carousel-item active"
+              
+              "
+            >
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <a
+                    href="index.html"
+                    src="img/bot.png"
+                    style="position: fixed; bottom: 20px; right: 20px"
+                    class="btn-get-started animate__animated animate__fadeInUp scrollto"
+                    >Chat with Sampatti</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
