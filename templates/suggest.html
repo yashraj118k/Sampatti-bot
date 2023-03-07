@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Government Scheme Recommendation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link
+      href="vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <style>
+      body {
+        background-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--TFq7Dlxs--/c_imagga_scale,f_auto,fl_progressive,h_720,q_auto,w_1280/https://dev-to-uploads.s3.amazonaws.com/i/uskd4x557wno7irs1q71.png");
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+      }
+
+      header {
+        background-color: #1a1a1a;
+        color: rgb(255, 255, 255);
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 36px;
+      }
+
+      form {
+        margin: 50px auto;
+        max-width: 600px;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0px 0px 10px #cccccc;
+        border-radius: 10px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+
+      input[type="number"],
+      select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+
+      input[type="submit"] {
+        background-color: #1a1a1a;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #333333;
+      }
+
+      #recommendation {
+        margin: 50px auto;
+        max-width: 600px;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0px 0px 10px #cccccc;
+        border-radius: 10px;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      @media only screen and (max-width: 600px) {
+        form,
+        #recommendation {
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Government Scheme Recommendation</h1>
+    </header>
+    <form id="user-input">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required />
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+      <label for="income">Income Category:</label>
+      <select id="income" name="income" required>
+        <option value="">Select Income Category</option>
+        <option value="Low-income">Low-income</option>
+        <option value="Middle-income">Middle-income</option>
+        <option value="High-income">High-income</option>
+      </select>
+      <input type="submit" value="Find Schemes" />
+    </form>
+    <div id="recommendation"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#user-input").submit(function (event) {
+          event.preventDefault(); // Prevent the default form submission behavior
+          var name=$("#name").val();
+          var age = $("#age").val();
+          var gender = $("#gender").val();
+          var income = $("#income").val();
+          localStorage.setItem("name", name);
+          schemes = [
+        {
+            "name": "Pradhan Mantri Jan Dhan Yojana",
+            "age_group": "18-59",
+            "gender": "Both",
+            "income_category": "Low-income",
+            "description": "A financial inclusion scheme to provide banking services to all households."
+        },
+        {
+            "name": "Ayushman Bharat Yojana",
+            "age_group": "0-59",
+            "gender": "Both",
+            "income_category": "Low-income",
+            "description": "A health insurance scheme to provide coverage for medical expenses."
+        },
+        {
+            "name": "Pradhan Mantri Vaya Vandana Yojana",
+            "age_group": "60+",
+            "gender": "Both",
+            "income_category": "Middle-income",
+            "description": "A pension scheme to provide regular income for senior citizens."
+        },
+        {
+            "name": "Pradhan Mantri Awas Yojana",
+            "age_group": "18+",
+            "gender": "Both",
+            "income_category": "Low-income",
+            "description": "A housing scheme to provide affordable homes for all."
+        },
+        {
+            "name": "Pradhan Mantri Mudra Yojana",
+            "age_group": "18-59",
+            "gender": "Both",
+            "income_category": "Low-income",
+            "description": "A scheme to provide collateral-free loans to micro and small enterprises."
+        },
+        {
+            "name": "Pradhan Mantri Kisan Samman Nidhi Yojana",
+            "age_group": "18+",
+            "gender": "Both",
+            "income_category": "Middle-income",
+            "description": "A scheme to provide financial assistance to farmers."
+        },
+        {
+            "name": "Sukanya Samriddhi Yojana",
+            "age_group": "0-10",
+            "gender": "Female",
+            "income_category": "Middle-income",
+            "description": "A savings scheme for the education and marriage of girl children."
+        }
+        ]
+        let eligible_schemes = [];
+        let rcm3=[];
+        let rcm3desc=[];
+        for (let i = 0; i < schemes.length; i++) {
+          let scheme = schemes[i];
+          let scheme_age_group = scheme.age_group.split('-');
+          let scheme_age_group_start = parseInt(scheme_age_group[0]);
+          let scheme_age_group_end = parseInt(scheme_age_group[1]);
+          if (isNaN(scheme_age_group_start)) {
+            scheme_age_group_start = 0;
+          }
+          if (isNaN(scheme_age_group_end)) {
+            scheme_age_group_end = 100;
+          }
+          if (age >= scheme_age_group_start && age <= scheme_age_group_end && (gender === scheme.gender||scheme.gender==="Both") && income === scheme.income_category) {
+            
+            eligible_schemes.push(scheme);
+            
+          }
+        }
+        if (eligible_schemes.length === 0) {
+          document.getElementById('recommendation').innerHTML = 'No schemes found for the given inputs.';
+        } 
+        else {
+          let recommendation = 'Recommended schemes:<br>';
+          for (let i = 0; i < eligible_schemes.length; i++) {
+            let scheme = eligible_schemes[i];
+            recommendation += (i+1)+". "+scheme["name"]+"<br>";
+            rcm3.push(scheme["name"]);
+            rcm3desc.push(scheme["description"]);
+            console.log(rcm3);
+            console.log(rcm3desc);
+          }
+          document.getElementById('recommendation').innerHTML = recommendation;
+          localStorage.setItem("recommend", JSON.stringify(rcm3));
+          localStorage.setItem("recommend2", JSON.stringify(rcm3desc));
+        }
+      });
+    });
+    </script>
+    <section id="hero">
+      <div class="hero-container">
+        <div
+          id="heroCarousel"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+          data-bs-interval="5000"
+        >
+          <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+          <div class="carousel-inner" role="listbox">
+            <!-- Slide 1 -->
+            
+              
+                <div class="carousel-content">
+                  <a
+                    onclick="location.href='/predict'"
+                    style="position: fixed; bottom: 20px; right: 20px"
+                    class="btn-get-started animate__animated animate__fadeInUp scrollto">
+                    Chat with Sampatti</a>
+                </div>
+              </div>
+            
+          
+        </div>
+      </div>
+    </section>
+  <script src="static/scripts/chat.js"></script>
+  </body>
+</html>

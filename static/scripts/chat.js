@@ -34,17 +34,17 @@ function getTime() {
 }
 
 // Gets the first message
-function firstBotMessage() {
-    let firstMessage = "Welcome to SampattiBot. How may I help you?"
-    document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
+// function firstBotMessage() {
+//     let firstMessage = "Welcome to SampattiBot, "+name+". These were the schemes recommended to you: "
+//     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
-    let time = getTime();
+//     let time = getTime();
 
-    $("#chat-timestamp").append(time);
-    document.getElementById("userInput").scrollIntoView(false);
-}
+//     $("#chat-timestamp").append(time);
+//     document.getElementById("userInput").scrollIntoView(false);
+// }
 
-firstBotMessage();
+// firstBotMessage();
 
 
 //Gets the text text from the input box and processes it
@@ -83,6 +83,7 @@ function getResponse() {
     
 }
 
+
 // // Handles sending text via button clicks
 function userQuery(query) {
     let userHtml = '<p class="userText"><span>' + query + '</span></p>';
@@ -106,12 +107,66 @@ function sendButton() {
 }
 
 function heartButton() {
-    botResponse("Thank you for liking my services")
+    botResponse("Thank you for liking my services");
 }
 
 function voiceSearch(){
-    botResponse("Listening...")
+    var button = document.getElementById("voice-search");
+    button.style.color = "blue";
+    botResponse("Listening...");
+    const recognition=new webkitSpeechRecognition();
+    recognition.continuous=false;
+    recognition.lang="en-US";
+    recognition.interimResults=false;
+    recognition.maxAlternatives=1;
+    const synth=window.speechSynthesis;
+    recognition.start();
+    recognition.onresult=(e)=>{
+        const transcript=e.results[e.results.length-1][0].transcript.trim();
+        userQuery(transcript);
+        recognition.stop();
+        let text1 = transcript;
+        if (text1 === "") {
+            return botResponse("error");
+        }
+        let msg1 = { name: "User", message: text1 }
+        this.messages.push(msg1);
+        
+        fetch('http://127.0.0.1:5000/predict', {
+            method: 'POST',
+            body: JSON.stringify({ message: text1 }),
+            mode: 'cors',
+            headers: {
+              'Content-Type': 'application/json'
+            }
+          })
+          .then(r => r.json())
+       
+          .then(r => {
+            let msg2 = { name: "SamBot", message: r.answer };
+            this.messages.push(msg2);
+            this.output=r.answer;
+            let utter=new SpeechSynthesisUtterance();
+            utter.onend=()=>{
+              recognition.stop();
+            };
+        
+        
+        utter.text=output;
+        synth.speak(utter);
+        botResponse(output);
+        button.style.color = '#333';
+
+            })
+        .catch((error) => {
+            console.error('Error:', error);
+            utter.text="Error";
+            synth.speak(utter);
+          });
+    }
 }
+
+
 function schemeresponse(clicked_id){
     userQuery("Tell me about "+clicked_id+" .")
     setTimeout(() => {botResponse("Getting details of "+clicked_id+" scheme.")}, 1500);
@@ -141,66 +196,3 @@ $("#textInput").keypress(function (e) {
     }
 });
 
-function voiceSearch(){
-    const startBtn=document.querySelector("#voice-search");
-    const recognition=new webkitSpeechRecognition();
-    recognition.continuous=false;
-    recognition.lang="en-US";
-    recognition.interimResults=false;
-    recognition.maxAlternatives=1;
-    
-    const synth=window.speechSynthesis;
-    
-    recognition.start();
-
-    
-    
-    
-    recognition.onresult=(e)=>{
-        const transcript=e.results[e.results.length-1][0].transcript.trim();
-        userQuery(transcript);
-        recognition.stop();
-        let text1 = transcript;
-        if (text1 === "") {
-            return botResponse("error");
-        }
-        let msg1 = { name: "User", message: text1 }
-        this.messages.push(msg1);
-        
-        fetch('http://127.0.0.1:5000/predict', {
-            method: 'POST',
-            body: JSON.stringify({ message: text1 }),
-            mode: 'cors',
-            headers: {
-              'Content-Type': 'application/json'
-            }
-          })
-          .then(r => r.json())
-       
-          .then(r => {
-            let msg2 = { name: "SamBot", message: r.answer };
-            this.messages.push(msg2);
-            this.output=r.answer;
-
-            })
-        .catch((error) => {
-            console.error('Error:', error);
-            utter.text="Error";
-            synth.speak(utter);
-          });
-          
-        
-          let utter=new SpeechSynthesisUtterance();
-          utter.onend=()=>{
-              recognition.stop();
-          };
-        
-        
-        utter.text=output;
-        synth.speak(utter);
-        botResponse(output);
-        
-        
-        
-    }
-}

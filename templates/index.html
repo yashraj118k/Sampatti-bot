@@ -36,29 +36,61 @@
               <div id="chatbox">
                 <h5 id="chat-timestamp"></h5>
                 <p id="botStarterMessage" class="botText">
-                  <span>Loading...</span>
-                </p>
+                  <span id="botStarterMessage2"><script>var name = localStorage.getItem("name");
+                  
+                  document.getElementById("botStarterMessage2").textContent = "Welcome to SampattiBot, "+ name+". These were the schemes recommended for you: ";</script>
+                  </span>
+                  
+                  </p>
+                  
+                  <div class="suggestion-panel">
+                
+                    <div id="panel">
+                      
+                      <script>
+                        var names = JSON.parse(localStorage.getItem("recommend")) || [];
+                        var descs = JSON.parse(localStorage.getItem("recommend2")) || [];
+                        var buttonContainer = document.getElementById("panel");
+                        
+                        // Loop through the names and create a button for each one
+                        for (var i = 0; i < names.length; i++) {
+                          var name = names[i];
+                          console.log(name);
+                          var desc=descs[i];
+                          console.log(desc);
+                          var p=document.createElement("p");
+                          p.id="p_"+i;
+                          p.classList.add("botText2"); 
+                          var button = document.createElement("button");
+                          button.innerText = name;
+
+                          button.id = "button_" + i;
+                          button.addEventListener("click", function() {
+                            var buttonId = this.id;
+                            // Get the index of the clicked button from its id
+                            var index = buttonId.split("_")[1];
+                            // Get the corresponding description from the descs array
+                            var desc2 = descs[index];
+                            let botHtml = '<p class="botText"><span>' + desc2 + '</span></p>';
+
+                            $("#textInput").val("");
+                            $("#chatbox").append(botHtml);
+                            document.getElementById("chat-bar-bottom").scrollIntoView(true);
+                          
+                          });
+                          p.appendChild(button);
+                          buttonContainer.appendChild(p);
+                          
+                        }
+
+                        
+                          </script>
+                        
+                    </div>
+                  </div>
+                
               </div>
-              <div class="suggestion-panel">
-                Most Popular schemes:
-                <div id="panel">
-                  <button id="UJALA" onclick="schemeresponse(this.id)">
-                    UJALA
-                  </button>
-                  <button id="Atal Yojna" onclick="schemeresponse(this.id)">
-                    Atal Yojna
-                  </button>
-                  <button id="PMKVY" onclick="schemeresponse(this.id)">
-                    PMKVY
-                  </button>
-                  <button id="PMSBY" onclick="schemeresponse(this.id)">
-                    PMSBY
-                  </button>
-                  <button id="PMJJVY" onclick="schemeresponse(this.id)">
-                    PMJJVY
-                  </button>
-                </div>
-              </div>
+              
               <!-- User input box -->
               <div class="chat-bar-input-block">
                 <div id="userInput">
@@ -71,7 +103,6 @@
                   />
                   <p></p>
                 </div>
-
                 <div class="chat-bar-icons">
                   <i
                     id="chat-icon1"
@@ -106,7 +137,7 @@
   <script>
     $SCRIPT_ROOT =' {{ request.script_root|tojson }}';
   </script>
+  <script src="https://apis.google.com/js/api.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="static/scripts/responses.js"></script>
   <script src="static/scripts/chat.js"></script>
 </html>

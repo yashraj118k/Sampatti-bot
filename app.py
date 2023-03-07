@@ -4,9 +4,10 @@ from chat import get_response
 app=Flask(__name__)
 CORS(app)
 
-@app.get("/predict")
+@app.route("/predict")
 def index_get():
     return render_template("index.html")
+
 
 @app.post("/predict")
 def predict():
@@ -14,6 +15,16 @@ def predict():
     response=get_response(text)
     message={"answer":response}
     return jsonify(message)
+
+
+@app.route('/')
+def index():
+    return render_template('landing.html') # serve the HTML file
+
+@app.route('/recommendation')
+def recommendation():
+    return render_template('suggest.html')
+
 
 if __name__=="__main__": 
     app.run(debug=True)
