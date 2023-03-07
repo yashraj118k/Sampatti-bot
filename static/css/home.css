@@ -8,3 +8,70 @@ body {
     /* background-color: rgb(238, 61, 61); */
     background-image: url('https://corp.smartbrief.com/wp-content/uploads/2020/07/AdobeStock_331489342-scaled.jpeg');
 }
+
+.news-highlights {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 100%;
+    background-color: #86d5ec;
+    border-right: 1px solid #e2e2e2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+}
+
+/* Set the width and height of the news highlights */
+.news-highlights {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100%;
+    background-color: #f7f7f7;
+    border-right: 1px solid #e2e2e2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #333;
+  }
+  
+  /* Style the news links */
+  .news-link {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+    background-color: #51e4e4;
+    border: 1px solid #e2e2e2;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .news-link:hover {
+    background-color: #abe0e0;
+  }
+  
+  /* Style the news header */
+  .news-header {
+    margin: 0;
+    padding: 15px;
+    background-color: #f44f1d;
+    font-size: 24px;
+    color: #e2e2e2;
+    font-weight: 600;
+    border-bottom: 1px solid #e2e2e2;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    /* Adjust the width of the news highlights panel for smaller screens */
+    .news-highlights {
+      width: 100%;
+    }
+  }
+

@@ -106,19 +106,19 @@
                 <div class="chat-bar-icons">
                   <i
                     id="chat-icon1"
-                    style="color: rgb(255, 0, 51)"
+                    style="color: rgb(255, 0, 51);cursor:pointer;"
                     class="fa fa-fw fa-heart"
                     onclick="heartButton()"
                   ></i>
                   <i
                     id="voice-search"
                     class="fa fa-microphone"
-                    style="color: #333"
+                    style="color: #333;cursor:pointer;"
                     onclick="voiceSearch()"
                   ></i>
                   <i
                     id="chat-icon"
-                    style="color: #333"
+                    style="color: #333;cursor:pointer;"
                     class="fa fa-fw fa-send"
                     onclick="sendButton()"
                   ></i>
@@ -133,7 +133,32 @@
         </div>
       </div>
     </div>
-  </body>
+    <div class="news-highlights">
+      <h2 class="news-header">News Highlights</h2>
+    <div id="news"></div>
+      <script>
+        function displayData() {
+          
+            fetch('/data')
+            .then(response => response.json())
+            .then(data => {
+                const newsDiv = document.getElementById('news');
+                for (let i = 0; i < data.length; i++) {
+                    const linkElement = document.createElement('a');
+                    linkElement.classList.add('news-link');
+                    linkElement.href = data[i].link;
+                    linkElement.textContent = data[i].title;
+
+                    newsDiv.appendChild(linkElement);
+                }
+            })
+            .catch(error => console.error(error));
+        }
+        displayData();
+        
+        </script>
+      </div>
+    </body>
   <script>
     $SCRIPT_ROOT =' {{ request.script_root|tojson }}';
   </script>

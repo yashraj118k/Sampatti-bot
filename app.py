@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
+import json
 from chat import get_response
 app=Flask(__name__)
 CORS(app)
@@ -8,6 +9,11 @@ CORS(app)
 def index_get():
     return render_template("index.html")
 
+@app.route('/data')
+def get_data():
+    with open('news_results.json') as f:
+        data = json.load(f)
+    return jsonify(data)
 
 @app.post("/predict")
 def predict():
@@ -15,7 +21,6 @@ def predict():
     response=get_response(text)
     message={"answer":response}
     return jsonify(message)
-
 
 @app.route('/')
 def index():

@@ -1,7 +1,7 @@
 .chat-bar-collapsible {
     position: fixed;
     bottom: 0;
-    right: 200px;
+    right: 15px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -42,6 +42,18 @@
     bottom: 0%;
     position: relative;
 }
+
+.wrapper .sidebar{
+    background: rgb(137, 217, 239);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
 
 .chat-container {
     max-height: 500px;
