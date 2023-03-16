@@ -15,7 +15,7 @@ def get_data():
         data = json.load(f)
     return jsonify(data)
 
-@app.post("/predict")
+@app.route("/predict", methods=['POST'])
 def predict():
     text=request.get_json().get("message")
     response=get_response(text)
