@@ -1,5 +1,4 @@
 import json
-import random
 from nltk_utils import tokenize, stem, bag_of_words 
 import numpy as np
 
@@ -52,10 +51,9 @@ if __name__ == '__main__':
 
         label=tags.index(tag)
         y_train.append(label)
-
+    
     x_train=np.array(x_train)
     y_train=np.array(y_train)
-
     
 
     batch_size=8
